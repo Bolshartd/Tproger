@@ -2,7 +2,10 @@ import calendar
 
 def is_year_leap(year):
     if calendar.isleap(year) is True:
-        print(f'\nThis year is leap: {calendar.isleap(year)}')
+        return(f'\nThis year is leap year: {calendar.isleap(year)}')
+        
     else:
-        print(f'\nThis year is not leap: {calendar.isleap(year)}')
-is_year_leap(int(input('Write a year to check is it leap: ')))
+        return(f'\nThis year is not leap year: {calendar.isleap(year)}')
+        
+year = int(input('Write a year to check is it leap: '))
+print(is_year_leap(year))
