@@ -9,5 +9,5 @@ def season(month):
     elif month in ('September', 'October', 'November'):
         return ('Fall')
 
-month = calendar.month_name[int(input("""Write a number from 1 to 12, where 1 -> January and 12 -> December\nNumber:"""))]
+month = calendar.month_name[int(input("""Write a number from 1 to 12 to know what season is this month, where 1 -> January and 12 -> December\nNumber:"""))]
 print(season(month))
