@@ -1,22 +1,13 @@
-# # Пользователь делает вклад в размере a рублей сроком на years лет 
-# под 10% годовых (каждый год размер его вклада увеличивается на 10%. 
-# Эти деньги прибавляются к сумме вклада, 
-# и на них в следующем году тоже будут проценты).
-
-# # Написать функцию bank , принимающая аргументы a и years , 
-# и возвращающую сумму, которая будет на счету пользователя.
-
-def bank(a, year):
-    m = year/year #1
-    b = int(a*0.1) #100
-    z = a+b #1000+100 = 1100
-    s = 0
-    while m<=year: #1<=5
-        s += b
-        m = m+1 #2
-        b = int(z*0.1) #110
-        z = z+b #1100+110 = 1210
-    print(f'Your profit for {year} years will be: {s+a}')
-
+#interest rate a year -> 10%
+def bank(cash, year):
+    year_count = year/year 
+    rate = int(cash*0.1) 
+    profit = cash+rate 
+    while year_count<=year:
+        if year_count == year:
+            print(f'Your profit for {year} years will be: {profit}')
+        year_count += 1 
+        b = int(profit*0.1) 
+        profit += b 
     
-full = bank(1000, 5)
+full = bank(2000, 2)
