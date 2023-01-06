@@ -3,14 +3,8 @@ import calendar
 calendar = calendar.month(2022, 7)
 print(calendar)
 def date(year, month, day):
-    if str(year) in calendar:
-        if str(month) in calendar:
-            if str(day) in calendar:
-                return('True')
-            else:
-                return('False')
-        else:
-            return('False')
+    if str(year) in calendar and str(month) in calendar and str(day) in calendar:
+        return('True')
     else:
         return('False')
 
