@@ -11,6 +11,6 @@ a = int(input('Write a square side:'))
 print(square(a))
 
 #v2
-# def square(a):
-#     return (a*4, a**2, (2**0.5)*a)
-# print(square(8))
+def square(a):
+    return (a*4, a**2, (2**0.5)*a)
+print(square(8))
